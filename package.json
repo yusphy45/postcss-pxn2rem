@@ -1,6 +1,6 @@
 {
   "name": "postcss-pxn2rem",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "description": "PostCSS plugin for convert pxn to rem for options(markBaseWidth, columns)",
   "keywords": [
     "postcss",

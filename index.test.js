@@ -11,7 +11,7 @@ async function run (input, output, opts) {
 // Write tests here
 
 it('单位转换', async () => {
-  await run('a{ height: 26pxn; font-size: 32pxn; }',
-    'a{ height: 1.1093rem; font-size: 1.3653rem; }',
+  await run('a{ width: 37.5pxn; height: 26pxn; font-size: 32pxn; }',
+    'a{ width: 1.6000rem; height: 1.1093rem; font-size: 1.3653rem; }',
     { markBaseWidth: 375, columns: 16 })
 })
