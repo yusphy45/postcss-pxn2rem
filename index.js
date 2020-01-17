@@ -7,7 +7,7 @@ module.exports = postcss.plugin('postcss-pxn2rem',
 
     return root => {
       // Transform CSS AST here
-      root.replaceValues(/(\d+.\d+|\d+)pxn/i, { fast: 'pxn' }, string => {
+      root.replaceValues(/(\d+.\d+|\d+)pxn/gi, { fast: 'pxn' }, string => {
         let val = parseFloat(string.replace(/[^\d.]/gi, ''))
         return `${ (val * columns / markBaseWidth)
           .toFixed(4) }rem`
